@@ -21,13 +21,16 @@ public class GitGoogleTest {
 					"C:\\WebDriver\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
-
+		
+		//adding this comments to add to git
 		driver.get("http://google.com");
 		driver.findElement(By.xpath(constants.TEXT_BOX_XPAHT)).sendKeys("book",
 				Keys.ENTER);
 		Assert.assertEquals(driver.getTitle(), title);
 		System.out.println(driver.findElement(
 				By.xpath(constants.CLICK_FIRST_LINK)).getText());
+		
+		
 		driver.quit();
 
 	}
