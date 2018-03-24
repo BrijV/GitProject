@@ -12,13 +12,13 @@ public class GitGoogleTest {
 
 		String Browsers = "Firefox";
 		String title = "book - Google Search";
-		WebDriver driver=null;
+		WebDriver driver = null;
 
 		if (Browsers.equalsIgnoreCase("Firefox")) {
 			driver = new FirefoxDriver();
-		} else if(Browsers.equalsIgnoreCase("Chrome"))
-		{
-			System.setProperty("webdriver.chrome.driver","C:\\WebDriver\\chromedriver.exe");
+		} else if (Browsers.equalsIgnoreCase("Chrome")) {
+			System.setProperty("webdriver.chrome.driver",
+					"C:\\WebDriver\\chromedriver.exe");
 			driver = new ChromeDriver();
 		}
 
