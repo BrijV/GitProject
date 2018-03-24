@@ -22,7 +22,7 @@ public class GitGoogleTest {
 			driver = new ChromeDriver();
 		}
 		
-		//adding this comments to add to git
+		//adding this comments to add to github
 		driver.get("http://google.com");
 		driver.findElement(By.xpath(constants.TEXT_BOX_XPAHT)).sendKeys("book",
 				Keys.ENTER);
